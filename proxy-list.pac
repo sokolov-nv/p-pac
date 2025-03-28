@@ -2,7 +2,7 @@ function FindProxyForURL(url, host) {
     var proxy = "PROXY your.proxy.server:port"; // Укажите ваш прокси
 
     var proxyDomains = [
-        // Google
+        // 🔹 Google (Поиск, API, YouTube, реклама, Firebase)
         "*.google.com",
         "*.googleusercontent.com",
         "*.gstatic.com",
@@ -18,19 +18,42 @@ function FindProxyForURL(url, host) {
         "*.googlesyndication.com",
         "*.doubleclick.net",
 
-        // OpenAI (ChatGPT)
+        // 🔹 Google Play (Play Маркет)
+        "*.play.google.com",
+        "*.gvt1.com",
+        "*.gvt2.com",
+        "*.googlezip.net",
+        "*.android.clients.google.com",
+        "*.ota.googlezip.net",
+        "*.ota-cache.googlezip.net",
+
+        // 🔹 Google Drive и Облачные сервисы
+        "*.drive.google.com",
+        "*.docs.google.com",
+        "*.sheets.google.com",
+        "*.slides.google.com",
+        "*.forms.google.com",
+
+        // 🔹 Google для работы и обучения
+        "*.googlemail.com",
+        "*.googlemeet.com",
+        "*.classroom.google.com",
+
+        // 🔹 OpenAI (ChatGPT)
         "*.openai.com",
+        "*.chatgpt.com",
         "*.s3.amazonaws.com",
         "*.azure.com",
+        "*.bpe.openai.com",
+        "*.auth0.openai.com",
+        "*.cdn.openai.com",
+        "*.cdn.jsdelivr.net",
 
-        // Cloudflare
+        // 🔹 Cloudflare
         "*.cloudflare.com",
         "*.cloudflare.net",
 
-        // Proxy-sale
-        "*.proxy-sale.com",
-
-        // Discord
+        // 🔹 Discord
         "*.discord.com",
         "*.discord.gg",
         "*.discordapp.com",
